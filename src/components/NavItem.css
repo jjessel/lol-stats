@@ -1,0 +1,17 @@
+.navItem {
+    height: 77px;
+    color: white;
+    margin-left: 16px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid transparent;
+    font-size: 14px !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navItem:hover {
+    border-bottom: 3px solid #0BC6E3
+}
