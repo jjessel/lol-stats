@@ -1,16 +1,17 @@
 import React from 'react';
 import NavItem from './NavItem';
 import './Header.css';
+import { NavigationItem } from '../models/NavigationItem';
 
 interface HeaderProps {
-    items: string[];
+    items: NavigationItem[];
 }
 
 function Header({ items }: HeaderProps) {
     return (
         <div className="header">
             {items.map((item) => (
-                <NavItem key={item} title={item} />
+                <NavItem key={item.name} navigationItem={item} />
             ))}
         </div>
     );

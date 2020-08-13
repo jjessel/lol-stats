@@ -11,23 +11,26 @@ import { Champion } from './models/Champion';
 class App extends React.Component {
     champions: Champion[] = [];
 
-    UNSAFE_componentWillMount(): void {
+    componentDidMount(): void {
         this.champions = Object.values(jsonObj.data).map((item) => {
             return item as Champion;
         });
     }
+
     render(): JSX.Element {
         return (
             <Router>
                 <main>
                     <div className="app">
-                        <Header items={['Characters']} />
+                        <Header
+                            items={[
+                                { name: 'Home', path: '/' },
+                                { name: 'Champions', path: '/champions' },
+                            ]}
+                        />
                     </div>
-                    <Route path="/" exact component={Home} />
-                    <Route
-                        path="/characters"
-                        component={(): JSX.Element => <Characters champions={this.champions} />}
-                    />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/champions" component={(): JSX.Element => <Characters champions={this.champions} />} />
                 </main>
             </Router>
         );

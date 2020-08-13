@@ -1,6 +1,7 @@
 import React from 'react';
 import { Champion } from '../models/Champion';
-import Builder from '../Utilities/URLBuilder';
+import ChampionCard from './ChampionCard';
+import './Characters.css';
 
 interface CharacterProps {
     champions: Champion[];
@@ -8,9 +9,9 @@ interface CharacterProps {
 
 const Characters: React.FC<CharacterProps> = ({ champions }: CharacterProps) => {
     return (
-        <div>
+        <div className="characters">
             {champions.map((champ) => {
-                return <img key={champ.id} src={Builder.defaultImageUrl(champ.id)} alt={champ.name} />;
+                return <ChampionCard key={champ.id} id={champ.id} name={champ.name} />;
             })}
         </div>
     );
