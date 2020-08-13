@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Purpose
+This is a learning project. I am learning React and Typescript at the same time as I work on this project. I am in no way affiliated with Riot Games or League of Legends.
+
+### Watch Live
+You can catch me streaming changes to this project on [Twitch](https://twitch.tv/JCubedApps)
 
 ## Available Scripts
 
