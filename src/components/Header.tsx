@@ -7,7 +7,7 @@ interface HeaderProps {
     items: NavigationItem[];
 }
 
-function Header({ items }: HeaderProps) {
+const Header: React.FC<HeaderProps> = ({ items }: HeaderProps) => {
     return (
         <div className="header">
             {items.map((item) => (
@@ -15,6 +15,6 @@ function Header({ items }: HeaderProps) {
             ))}
         </div>
     );
-}
+};
 
 export default Header;
