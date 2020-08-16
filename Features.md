@@ -6,6 +6,6 @@
     - https://styled-components.com/docs/basics#installation
     - https://styled-components.com/docs/api#typescript
     - https://styled-components.com/docs/basics#styling-any-component
-- [ ] Update name label on champions page
+- [ ] Update name label on champions page to just be white font under champion
 - [ ] Click into an individual champion and show information
-- [ ] Add something to the home page
+- [ ] Add content to the home page
