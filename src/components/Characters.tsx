@@ -1,13 +1,11 @@
 import React from 'react';
-import { Champion } from '../models/Champion';
 import ChampionCard from './ChampionCard';
 import './Characters.css';
+import ChampionsService from '../Data/ChampionsService';
 
-interface CharacterProps {
-    champions: Champion[];
-}
+const champions = ChampionsService.champions();
 
-const Characters: React.FC<CharacterProps> = ({ champions }: CharacterProps) => {
+const Characters: React.FC = () => {
     return (
         <div className="characters">
             {champions.map((champ) => {
