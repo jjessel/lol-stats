@@ -6,25 +6,23 @@ import Characters from './components/Characters';
 
 import './App.css';
 
-class App extends React.Component {
-    render(): JSX.Element {
-        return (
-            <Router>
-                <main>
-                    <div className="app">
-                        <Header
-                            items={[
-                                { name: 'Home', path: '/' },
-                                { name: 'Champions', path: '/champions' },
-                            ]}
-                        />
-                    </div>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/champions" component={Characters} />
-                </main>
-            </Router>
-        );
-    }
-}
+const App: React.FC = () => {
+    return (
+        <Router>
+            <main>
+                <div className="app">
+                    <Header
+                        items={[
+                            { name: 'Home', path: '/' },
+                            { name: 'Champions', path: '/champions' },
+                        ]}
+                    />
+                </div>
+                <Route exact path="/" component={Home} />
+                <Route path="/champions" component={Characters} />
+            </main>
+        </Router>
+    );
+};
 
 export default App;
