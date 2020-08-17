@@ -7,6 +7,10 @@ interface ChampionCardProps {
     name: string;
 }
 
+const ChampionDiv = styled.div`
+    padding-bottom: 32px;
+`;
+
 const TagsDiv = styled.div`
     display: flex;
     justify-content: center;
@@ -18,50 +22,24 @@ const TagsDiv = styled.div`
         width: 200px;
         line-height: 36px;
         position: relative;
-        margin: 0 16px 8px 0;
-        padding: 0 10px 0 12px;
-        background: #777;
-        -webkit-border-bottom-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        -webkit-border-top-right-radius: 3px;
-        border-top-right-radius: 3px;
-        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        color: #fff;
+        color: #f0f0f0;
         font-size: 24px;
         font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
         text-decoration: none;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         font-weight: bold;
-    }
-
-    a:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -18px;
-        width: 0;
-        height: 0;
-        border-color: transparent #0bc6e3 transparent transparent;
-        border-style: solid;
-        border-width: 18px 18px 18px 0;
-    }
-
-    a.color {
-        background: #0bc6e3;
     }
 `;
 
 const ChampionCard: React.FC<ChampionCardProps> = ({ id, name }: ChampionCardProps) => {
     return (
-        <div>
+        <ChampionDiv>
             <img key={id} src={Builder.defaultImageUrl(id)} alt={name} />;
             <TagsDiv>
                 <a href="#" className="color">
                     {name}
                 </a>
             </TagsDiv>
-        </div>
+        </ChampionDiv>
     );
 };
 
