@@ -7,6 +7,7 @@
     - https://styled-components.com/docs/api#typescript
     - https://styled-components.com/docs/basics#styling-any-component
 - [x] Update name label on champions page to just be white font under champion
+- [ ] Fix Champion model
 - [ ] Click into an individual champion and show information
 - [ ] Add content to the home page
 - [ ] Address slow loading of images
