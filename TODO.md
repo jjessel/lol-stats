@@ -13,3 +13,4 @@
 - [ ] Add search to champions
 - [ ] Add filtering to champions
 - [ ] Add Netlify hook
+- [ ] Add GitHub action to auto close PRs not from contributors.
