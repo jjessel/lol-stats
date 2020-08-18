@@ -10,3 +10,6 @@
 - [ ] Click into an individual champion and show information
 - [ ] Add content to the home page
 - [ ] Address slow loading of images
+- [ ] Add search to champions
+- [ ] Add filtering to champions
+- [ ] Add Netlify hook
