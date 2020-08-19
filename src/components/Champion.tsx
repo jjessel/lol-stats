@@ -9,9 +9,12 @@ const Champion: React.FC = () => {
 
     useEffect(() => {
         if (!champion.champion) {
+            document.title = 'Champion';
             ChampionsService.champion(name).then((value) => {
                 setChampion(value);
             });
+        } else {
+            document.title = champion.champion.name;
         }
     });
 

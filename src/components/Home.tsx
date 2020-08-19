@@ -30,6 +30,7 @@ const SubTitle = styled.div`
 `;
 
 const Home: React.FC = () => {
+    document.title = 'League of Legends';
     return (
         <Div>
             <Title>League of Legends</Title>

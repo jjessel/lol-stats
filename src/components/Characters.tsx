@@ -15,6 +15,7 @@ const Container = styled.div`
 `;
 
 const Characters: React.FC = () => {
+    document.title = 'Champions';
     return (
         <Container>
             {champions.map((champ) => {
