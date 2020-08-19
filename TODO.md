@@ -7,7 +7,11 @@
     - https://styled-components.com/docs/api#typescript
     - https://styled-components.com/docs/basics#styling-any-component
 - [x] Update name label on champions page to just be white font under champion
+- [ ] Fix Champion model
 - [ ] Click into an individual champion and show information
+    - https://leagueoflegends.fandom.com/wiki/Aatrox
+    - https://www.leaguespy.gg/league-of-legends/champion/aatrox/stats
+    - https://www.mobafire.com/league-of-legends/champion/aatrox-114
 - [x] Add content to the home page
 - [ ] Address slow loading of images
 - [ ] Add search to champions
