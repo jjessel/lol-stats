@@ -135,7 +135,7 @@ export interface Recommended {
     blocks: Block[];
 }
 
-export interface Aatrox {
+export interface ChampionLite {
     id: string;
     key: string;
     name: string;
@@ -155,13 +155,9 @@ export interface Aatrox {
     recommended: Recommended[];
 }
 
-export interface Data {
-    Aatrox: Aatrox;
-}
-
-export interface RootObject {
+export interface ChampionFull {
     type: string;
     format: string;
     version: string;
-    data: Data;
+    champion: ChampionLite;
 }
