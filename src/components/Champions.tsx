@@ -14,7 +14,7 @@ const Container = styled.div`
     background-color: black;
 `;
 
-const Characters: React.FC = () => {
+const Champions: React.FC = () => {
     document.title = 'Champions';
     return (
         <Container>
@@ -25,4 +25,4 @@ const Characters: React.FC = () => {
     );
 };
 
-export default Characters;
+export default Champions;

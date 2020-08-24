@@ -9,6 +9,7 @@
 - [x] Update name label on champions page to just be white font under champion
 - [x] Fix Champion model
 - [x] Add content to the home page
+- [x] Refactor characters page to say champions 
 - [ ] Click into an individual champion and show information
     - https://leagueoflegends.fandom.com/wiki/Aatrox
     - https://www.leaguespy.gg/league-of-legends/champion/aatrox/stats
