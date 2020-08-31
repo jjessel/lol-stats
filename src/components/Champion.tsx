@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ChampionFull } from '../models/ChampionFull';
 import ChampionsService from '../Data/ChampionsService';
+import StatGrid from './StatGrid';
 
 const Champion: React.FC = () => {
     const { name } = useParams();
@@ -21,7 +22,11 @@ const Champion: React.FC = () => {
     if (!champion.champion) {
         return <div>Fetching Data</div>;
     } else {
-        return <div>The champion is {champion.champion.name}</div>;
+        return (
+            <div>
+                <StatGrid champion={champion.champion} />
+            </div>
+        );
     }
 };
 

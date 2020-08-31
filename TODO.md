@@ -15,7 +15,8 @@
     - https://www.leaguespy.gg/league-of-legends/champion/aatrox/stats
     - https://www.mobafire.com/league-of-legends/champion/aatrox-114
 - [ ] Address slow loading of images
-    - Add placeholder image
+    - <del>Add placeholder image</del> (Not the issue)
+    - Address image loading by prioritizing above the fold images
 - [ ] Add search to champions
 - [ ] Add filtering to champions
 - [ ] Add Netlify hook
