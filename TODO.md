@@ -24,3 +24,4 @@
 - [ ] Add tests
 - [ ] Refactor URL building in service
 - [ ] Refactor Passive and Spells
+- [ ] Refactor passive and spell url builder to use group so code is not duplicated DRY
