@@ -23,3 +23,4 @@
 - [ ] Add GitHub action to auto close PRs not from contributors.
 - [ ] Add tests
 - [ ] Refactor URL building in service
+- [ ] Refactor Passive and Spells
